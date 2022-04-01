@@ -7,6 +7,17 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+:root{
+	--main-accent-color: #9081E0;
+	--main-accent-color-high: #8081E0;
+	--main-accent-color-low: #9F94DD;
+
+	--main-accent-color-text: #fff;
+	--main-accent-color-text2: #ddd;
+}
+
+
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -117,7 +128,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #4acaa8 !important;
+			color: var(--main-accent-color) !important;
 		}
 
 	strong, b {
@@ -1785,7 +1796,7 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #4acaa8;
+		color: var(--main-accent-color);
 		font-size: 3.5em;
 	}
 
@@ -1848,7 +1859,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #4acaa8;
+			border-color: var(--main-accent-color);
 		}
 
 	select {
@@ -1953,7 +1964,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #4acaa8;
+			border-color: var(--main-accent-color);
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2200,7 +2211,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			height: 20em;
+			height: 12em;
 			border-radius: 0;
 		}
 
@@ -2402,7 +2413,7 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: #4acaa8;
+				background: var(--main-accent-color);
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2618,7 +2629,7 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #4acaa8;
+			background-color: var(--main-accent-color);
 			color: #ffffff !important;
 		}
 
@@ -2626,14 +2637,14 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #5ed0b1;
+				background-color: var(--main-accent-color-low);
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #39c29d;
+				background-color: var(--main-accent-color-high);
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2700,8 +2711,8 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #4acaa8;
-		color: #d2f2e9;
+		background: var(--main-accent-color);
+		color: var(--main-accent-color-text);
 		height: 100%;
 		overflow-y: auto;
 		position: fixed;
@@ -2720,11 +2731,11 @@ input, select, textarea {
 			}
 
 		#header header p {
-			color: #b7eadc;
+			color: var(--main-accent-color-low);
 		}
 
 		#header a {
-			color: #d2f2e9;
+			color: var(--main-accent-color-text);
 		}
 
 			#header a:hover {
@@ -2751,7 +2762,7 @@ input, select, textarea {
 			}
 
 			#header > header p {
-				color: #d2f2e9;
+				color: var(--main-accent-color-text2);
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2772,7 +2783,7 @@ input, select, textarea {
 			}
 
 				#header > footer .icons li a {
-					color: #b7eadc;
+					color: var(--main-accent-color-text);
 				}
 
 		#header > nav {
@@ -2789,7 +2800,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #5ccfb1;
+					border-top: solid 2px var(--main-accent-color-low);
 					display: block;
 					padding: 0;
 				}
@@ -2808,7 +2819,7 @@ input, select, textarea {
 
 						#header > nav ul li a.active {
 							background: #fff;
-							color: #4acaa8 !important;
+							color: var(--main-accent-color) !important;
 						}
 
 					#header > nav ul li:first-child {
@@ -3076,7 +3087,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #4acaa8;
+						background: var(--main-accent-color);
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
@@ -3310,7 +3321,7 @@ input, select, textarea {
 			input[type="reset"],
 			input[type="button"],
 			.button {
-				padding: 0;
+				padding: 2;
 			}
 
 	}
